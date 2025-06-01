@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
- <title>	Portfolio Using ARIA </title>
+  <title>My Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
-	<nav>
-		<ul>
-			<li><a href="#about"> About </a> </li>
-			<li><a href="#project"> Project </a> </li>
-			<li><a href="#contact"> Contact </a> </li>
-		</ul>		
-	</nav>
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-	<h1>This is a ARIA Portfolio</h1>
+  <h1 role="heading">Welcome to My Portfolio</h1>
 
-	
-	<p id="about"> A passionate software Developer</p>
+  <img role="img"
+	  src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" 
+	  alt="Portrait of the developer"
+	  height="300px"
+	  width="500px"
+	  >
 
-	<img 
-		src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" 
-		alt= "A sparrow image"
-		height="300px"
-		width="400px"
-		/>
+  <p id="about">
+    Hello! I’m a passionate web developer focused on creating accessible, user-friendly websites using modern technologies.
+  </p>
 
-	<h2 id = "project"> Project Section</h2>
-	<ul role="list">
+  <h2 role="heading" id="projects">My Skills</h2>
+  <ul role="list">
     <li role="listitem">JavaScript / MERN Stack Development</li>
     <li role="listitem">Responsive Web Design</li>
     <li role="listitem">Accessibility & ARIA Best Practices</li>
   </ul>
 
+	<h2 role="heading" id="contact">Contact Me</h2>
+  <p>You can reach me at  <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.</p>
 
-	    <h3 id="contact"> You can reach me at unmeshbari5@gmail.com</h3>
 
-	
-	
-
-		
 </body>
-
 </html>
